@@ -351,6 +351,26 @@ a.pj{text-decoration:none}
 .pfl{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:10px}
 .pj.x{display:none}
 .pcat{position:absolute;top:12px;left:50%;transform:translateX(-50%);padding:2px 12px;border-radius:99px;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold2);background:rgba(7,22,43,.45);border:1px solid rgba(240,201,143,.45);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+
+/* desempenho */
+.pj{will-change:transform}
+.pj.h,.pj.hl,.pj.hr,.pj.x{visibility:hidden}
+#info,#contactos{content-visibility:auto;contain-intrinsic-size:auto 420px}
+@media(max-width:900px),(hover:none){
+body::before{filter:none!important;transform:none!important;background:linear-gradient(180deg,#0c2543 0%,#07162b 60%)!important}
+.nav,.mbar,.ctg,#bd,.pf,.pn,.pcat,.pj{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+.nav{background:rgba(7,22,43,.96)!important}.mbar{background:rgba(7,22,43,.97)!important}
+.pj{background:linear-gradient(145deg,rgba(40,86,96,.78),rgba(14,40,62,.88))!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 8px 18px rgba(0,0,0,.35)!important;filter:none!important}
+.pj::before,.pj::after{animation:none!important;filter:none!important}
+.pj.l,.pj.r{--bl:0px}
+#scr .aur{filter:none!important;animation:none!important;opacity:.35}
+#scr .shine,#scr .spin{animation:none!important}
+#scr .im svg{filter:none!important;animation:none!important}
+#lap::before,#lap::after{filter:none!important}
+.card .ic::before,.card .ic::after,#pn .pi::before,#pn .pi::after{filter:none!important;animation:none!important}
+.card,.it,.h,.sub,.cta,#lap,#scr{animation:none!important}
+.pbe,.pbg{filter:none!important}.pbg{mix-blend-mode:normal!important}
+}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "name": "Apps e sites criados pela BBS Internet Cafe", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "SoftwareApplication", "name": "BBS POS", "description": "Sistema de vendas, stock e caixa para o seu negócio.", "url": "https://bbinter2026.github.io/bbsposapp/", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "author": {"@type": "Organization", "name": "BBS Internet Cafe"}}}, {"@type": "ListItem", "position": 2, "item": {"@type": "SoftwareApplication", "name": "Convites Digitais", "description": "Convites para casamentos, noivados, aniversários e batizados, com QR e confirmação online.", "url": "https://bbinter2026.github.io/convites/", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "author": {"@type": "Organization", "name": "BBS Internet Cafe"}}}, {"@type": "ListItem", "position": 3, "item": {"@type": "SoftwareApplication", "name": "Imotur", "description": "Turismo, mídia e negócios: alojamentos, ecorreservas e praias.", "url": "https://bbinter2026.github.io/imotur/", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "author": {"@type": "Organization", "name": "BBS Internet Cafe"}}}, {"@type": "ListItem", "position": 4, "item": {"@type": "SoftwareApplication", "name": "BBS TV", "description": "Guia gratuito de TV online com canais de Moçambique, Angola, Cabo Verde e Portugal.", "url": "https://bbinter2026.github.io/bbstv/", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "author": {"@type": "Organization", "name": "BBS Internet Cafe"}}}, {"@type": "ListItem", "position": 5, "item": {"@type": "SoftwareApplication", "name": "Free Traffic Booster", "description": "Aumente o tráfego do seu site sem custos.", "url": "https://bbinter2026.github.io/bbs-free-traffic-booster/", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "author": {"@type": "Organization", "name": "BBS Internet Cafe"}}}, {"@type": "ListItem", "position": 6, "item": {"@type": "SoftwareApplication", "name": "Suporte Remoto", "description": "Assistência técnica à distância para computadores e sistemas.", "url": "https://bbinter2026.github.io/suporte-remoto/", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "author": {"@type": "Organization", "name": "BBS Internet Cafe"}}}, {"@type": "ListItem", "position": 7, "item": {"@type": "SoftwareApplication", "name": "FrotaPro", "description": "Gestão de frotas: viaturas, controlo e relatórios.", "url": "https://bbinter2026.github.io/FrotaPro/", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "author": {"@type": "Organization", "name": "BBS Internet Cafe"}}}, {"@type": "ListItem", "position": 8, "item": {"@type": "SoftwareApplication", "name": "BBS Trends", "description": "Vagas reais, fontes confirmadas. Candidate-se com segurança.", "url": "https://bbinter2026.github.io/bbstrends/", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "author": {"@type": "Organization", "name": "BBS Internet Cafe"}}}, {"@type": "ListItem", "position": 9, "item": {"@type": "SoftwareApplication", "name": "Commercial System", "description": "Faturas, recibos, cotações e pró-formas offline, prontos a imprimir.", "url": "https://bbinter2026.github.io/commercialsystem/", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "author": {"@type": "Organization", "name": "BBS Internet Cafe"}}}, {"@type": "ListItem", "position": 10, "item": {"@type": "SoftwareApplication", "name": "Sistema Comercial Grátis", "description": "Documentos com logotipo, IVA, ISPC ou IRPS e totais automáticos.", "url": "https://bbinter2026.github.io/sistemacomercialgratis/", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "author": {"@type": "Organization", "name": "BBS Internet Cafe"}}}]}</script>
 </head>
@@ -536,7 +556,7 @@ render();
 function dots(){box.innerHTML='';ds=list.map(function(c,i){var b=document.createElement('button');b.className='pd';b.setAttribute('aria-label',i+1);b.onclick=function(){go(i)};box.appendChild(b);return b})}
 function set(){var n=list.length;all.forEach(function(c){if(list.indexOf(c)<0)c.className='pj x'});list.forEach(function(c,i){var d=((i-cur)%n+n)%n;if(d>n/2)d-=n;c.className='pj '+(d===0?'c':d===1?'r':d===-1?'l':d>1?'hr':'hl');c.setAttribute('aria-hidden',d===0?'false':'true')});ds.forEach(function(x,i){x.classList.toggle('on',i===cur)})}
 function go(i){var n=list.length;cur=((i%n)+n)%n;set();reset()}
-function reset(){clearInterval(tm);if(document.hidden)return;tm=setInterval(function(){go(cur+1)},5000)}
+function reset(){clearInterval(tm);if(document.hidden)return;tm=setInterval(function(){if(car.dataset.vis!=='0')go(cur+1)},5000)}
 car.querySelector('.pl').onclick=function(){go(cur-1)};car.querySelector('.pr').onclick=function(){go(cur+1)};
 all.forEach(function(c){c.addEventListener('click',function(e){if(!c.classList.contains('c')){e.preventDefault();go(list.indexOf(c))}})});
 document.querySelectorAll('.pf').forEach(function(b){b.onclick=function(){document.querySelectorAll('.pf').forEach(function(x){x.classList.toggle('on',x===b)});var f=b.dataset.f;list=all.filter(function(c){return !f||c.dataset.cat===f});cur=0;dots();set();reset()}});
@@ -547,6 +567,7 @@ document.addEventListener('visibilitychange',reset);
 document.addEventListener('keydown',function(e){var r=car.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;if(e.key==='ArrowLeft')go(cur-1);else if(e.key==='ArrowRight')go(cur+1)});
 document.querySelectorAll('[data-go]').forEach(function(b){b.addEventListener('click',function(){K='';render();var t=document.getElementById(b.dataset.go);if(t)t.scrollIntoView({behavior:'smooth',block:'start'})})});
 dots();set();reset()})();
+(function(){var c=document.getElementById('pcar');if(!c||!window.IntersectionObserver)return;new IntersectionObserver(function(e){c.dataset.vis=e[0].isIntersecting?'1':'0'},{threshold:.1}).observe(c)})();
 </script>
 </body>
 </html>
